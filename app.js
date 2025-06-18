@@ -1,5 +1,5 @@
       let listaDeNumeros = []
-      let numeroLimite = 1000
+      let numeroLimite = 10
         let numeroSecreto = gerarNumeroAleatorio()
         let tentativas = 1
         function exibirTextoNaTela(tag, texto) {
@@ -16,11 +16,11 @@
 }
   function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto')
-        exibirTextoNaTela('p', 'Escolha um número entre 1 e 1000')
+        exibirTextoNaTela('p', 'Escolha um número entre 1 e 10')
 
   }
         exibirTextoNaTela('h1', 'Jogo do número secreto')
-        exibirTextoNaTela('p', 'Escolha um número entre 1 e 1000')
+        exibirTextoNaTela('p', 'Escolha um número entre 1 e 10')
 
         function verificarChute(){
           let chute = document.querySelector ('input').value
@@ -43,7 +43,7 @@
         };
 
         function gerarNumeroAleatorio() {
-        let numeroEscolhido = parseInt(Math.random() * 1000 + 1)
+        let numeroEscolhido = parseInt(Math.random() * 10 + 1)
         let quantidadeElementosLista = listaDeNumeros.length
         
         if (quantidadeElementosLista == numeroLimite) {
